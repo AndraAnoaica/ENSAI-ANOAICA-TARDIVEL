@@ -43,3 +43,8 @@ In the product table we have for each cproduct, the number of distinct customers
 We consider that our tables are provided by an external server into the location specified into HDFS. The tables are processed according to the specifications, The Product_ref table and the Variant are static, while the Product description and Customer are replaced every day. The table representing the order appends to the old table the current day's purchases. 
 
 We are creating external tables and the final results are also stored as external tables.  
+
+**forecast.py**
+
+forecast.py is a python script that lakes use of the forecast.io API to fetch data related to weather on a particular date. If the desired date is wished to be change, only changing the fllowing line is needed, where the first argument is the year, the second the month, the third the date and the following is the huor.
+date = datetime.datetime(2015,11,3,12,0,0)
