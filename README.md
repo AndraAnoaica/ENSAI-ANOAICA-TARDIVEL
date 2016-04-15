@@ -48,3 +48,6 @@ We are creating external tables and the final results are also stored as externa
 
 forecast.py is a python script that lakes use of the forecast.io API to fetch data related to weather on a particular date. If the desired date is wished to be change, only changing the fllowing line is needed, where the first argument is the year, the second the month, the third the date and the following is the huor.
 date = datetime.datetime(2015,11,3,12,0,0)
+the files are read and written to hdfs
+pip install pydoop  command must be run in the terminal to install pydoop that enables access to hdfs
+pip install python-forecastio command must be run in the terminal to install forecastio
